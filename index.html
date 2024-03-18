@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="container_wrapper">
+                <img src="utils/media/imagies/winther.jpg" alt="season" id="container_wrapper_img">
+                <div class="location_container">
+                    <h1 id="location">armenia</h1>
+                </div>
+                <div class="container_weather">
+                    <div class="container_info">
+                        <div id="loading">
+                            <img src="utils/media/gifs/loading.gif" alt="loading">
+                        </div>
+                        <div id="error">
+                            <p id="error_p">Error</p>
+                        </div>
+                        <div class="img_container">
+                            <img src="utils/media/imagies/rain.png" alt="weather" id="weather_img">
+                        </div>
+                        <div class="description_container">
+                            <p id="description">rain</p>
+                        </div>
+                        <div class="weather-info">
+                            <p id="temperature">9</p>
+                            <div class="location_date_container">
+                                <h1 id="location2">Armenia</h1>
+                                <p id="date">Yerevan 2024-01-29 23:26</p>
+                            </div>
+                            <div class="air_info">
+                                <div id="status">Clear</div>
+                                <div id="humidity">Humidity: 81%</div>
+                                <div id="Wind">6.1 km/h</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_search">
+                        <form id="search_form">
+                            <input type="text" id="locationInput" placeholder="Search location">
+                            <button id="searchButton">Search</button>
+                        </form>
+                        <div id="recent_search_container">
+                            <p class="recent_p">Recent search</p>
+                            <hr id="recent_search_hr"/>
+                            <!-- <div class="recent_search">Bangladesh</div>
+                            <div class="recent_search">Italy</div>
+                            <div class="recent_search">France</div>
+                            <div class="recent_search">Turkey</div>
+                            <div class="recent_search">India</div>
+                            <div class="recent_search">Dubai</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
